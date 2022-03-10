@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhận code từ ô input</title>
+</head>
+<body>
+<form>
+    <input type = "text" id="a">
+    <input type = "text" id="b">
+    <input type="button" onclick="nhan2so()" value="Mul(*)">
+    <h1 id="calResult"></h1>
+</form>
+<script>
+    function nhan2so(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let result = a * b ;
+        document.getElementById ('calResult').innerHTML = "Result Mul: " + result ;
+    }
+</script>
+</body>
+</html>

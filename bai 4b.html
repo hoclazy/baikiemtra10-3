@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" onclick="abinhphuong()" value="a * a">
+    <input type="button" onclick="amub()" value="a ^ b">
+    <p id="abinhphuong"></p>
+    <p id="amub"></p>
+</form>
+<script>
+    function abinhphuong(){
+        let a = document.getElementById("a").value;
+        let abinhphuong = a * a ;
+        document.getElementById ('abinhphuong').innerHTML = "abinhphuong: " + a * a ;
+    }
+    function amub(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let amub = a ** b ;
+        document.getElementById ('amub').innerHTML = "amub: " + a ** b ;
+    }
+</script>
+</body>
+</html>

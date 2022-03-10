@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" onclick="chuvi()" value="chuvi">
+    <input type="button" onclick="dientich()" value="dientich">
+    <p id="chuvi"></p>
+    <p id="dientich"></p>
+</form>
+<script>
+    function chuvi(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let chuvi = (a * b)/2 ;
+        document.getElementById ('chuvi').innerHTML = "chuvi: " + chuvi ;
+    }
+    function dientich(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let dientich = a * b ;
+        document.getElementById ('dientich').innerHTML = "dientich: " + dientich ;
+    }
+</script>
+</body>
+</html>
